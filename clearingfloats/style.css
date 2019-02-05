@@ -1,0 +1,77 @@
+/*p, a {
+	width: 20%;
+	margin: 20px;
+	padding: 30px;
+	border: 2px solid black;
+	display: block;
+}*/
+
+.wrapper {
+	background: #fff;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.wrapper:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*img {
+	float: right;
+	margin: 10px;
+}*/
+
+/*.blue {
+	background: blue;
+	float: right;
+}
+
+.red {
+	background: red;
+	float: right;
+}
+
+.green {
+	background: green;
+	float: right;
+}
+
+.box {
+	height: 100px;
+	width: 100px;
+}
+*/
+
+
+.service h2, .service p {
+	color: #999;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.service {
+	float: left;
+	background: #eee;
+	width: 29.33%;
+	margin: 1%;
+	padding: 1%;
+	height: 140px;
+}
+
+.content {
+	margin-top: 100px;  /* margin is not affecting because  */
+	padding: 10px;
+	background: #ccc;
+	clear: both;
+	/*both clear left and right floats to clear normal document flow*/
+	/*so you can also clear left because you set float left*/
+}
+/*after means it will be placed something after services class*/
+.services:after{
+	content: "";
+	display: block;
+	clear: both;
+}
